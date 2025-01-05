@@ -9,6 +9,7 @@ This project implements K-Means clustering algorithm for analyzing weather data,
 ## Output
 ### Centroid Center
 ![{DED5AE5D-631C-4131-9CFF-A5AF6ADAEF86}](https://github.com/user-attachments/assets/1209d07e-b534-4ace-bcf9-696ed0c4dd1c)
+
 Based on the final results of centroid center, the data has been grouped into three clusters. The conclusions for each cluster are as follows:
 - Cluster 1 : contains data representing cloudly weather
 - Cluster 2 : contains data representing rainy weather
@@ -19,6 +20,7 @@ Based on the final results of centroid center, the data has been grouped into th
 
 ### Data Count for Each Cluster
 ![{CC6D5282-65BA-492C-A3A2-7C2D445822D7}](https://github.com/user-attachments/assets/d483b3f0-fcf3-4597-9039-7eeb089442f1)
+
 Based on the output, it is observed that most data fall into Cluster 2. This indicates that during Januari 2022, the Banyuwangi region predominantly rainy weather
 
 ### Cluster Visualization
