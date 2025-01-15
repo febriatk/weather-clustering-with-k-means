@@ -1,6 +1,7 @@
 # WEATHER CLUSTERING
 
-This project implements K-Means clustering algorithm for analyzing weather data, with built-in visualization for cluster results. The data used for this project consists of daily weather data from the Banyuwangi region throughout January 2022.
+This project implements the K-Means clustering algorithm in Python to analyze weather patterns based on multidimensional variables, including temperature, humidity, rainfall, solar radiation, and wind speed. The dataset comprises daily weather observations from the Banyuwangi region during January 2022, with built-in visualizations provided to effectively showcase the clustering results. The analysis revealed dominant patterns associated with rainy weather conditions.
+
 
 ## Features
 - K-Means Clustering implementation in Python
