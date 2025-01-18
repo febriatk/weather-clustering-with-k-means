@@ -1,13 +1,31 @@
-# WEATHER CLUSTERING
+# WEATHER CLUSTERING ANALYSIS
 
-This project implements the K-Means clustering algorithm in Python to analyze weather patterns based on multidimensional variables, including temperature, humidity, rainfall, solar radiation, and wind speed. The dataset comprises daily weather observations from the Banyuwangi region during January 2022, with built-in visualizations provided to effectively showcase the clustering results. The analysis revealed dominant patterns associated with rainy weather conditions.
+This project implements the K-Means clustering algorithm in Python to analyze hourly weather data in Banyuwangi during January 2022. The dataset includes multidimensional weather variables—temperature, humidity, rainfall, solar radiation, and wind speed. The clustering results identify distinct weather patterns and visualized effectively using PCA (Principal Component Analysis)
 
 
-## Features
-- K-Means Clustering implementation in Python
-- Visualization of cluster with PCA
+## Dataset Information
 
-## Output
+- ### Source : BMKG Banyuwangi
+- ### Variables :
+  - Temperature (°C) : Hourly average temperature
+  - Humidity (%) : Hourly average humidity
+  - Rainfall (mm) : Hourly average precipitaion levels
+  - Solar Radiation (W/m²) : Hourly average solar radiation
+  - Wind Speed (m/s) : Hourly average wind speed
+- ## Time Period : 1 January 2022 to 31 January 2022
+- ## Total Data Points : 744 records (24 hours x 31 days)
+
+
+## Methodology
+1. ### Clustering Approach
+   - Algorithm Used : K-Means Clustering
+     - Choses for its efficiency in grouping high-dimensional data based on similarity across variables
+3. ### Dimensionality Reduction for Visualization
+   - Algorithm Used : PCA (Principal Component Analysis)
+     - Used to reduce the five-dimensional data into two principal components for easier interpretation and visualization
+
+
+## Result and Interpretation
 ### Centroid Center
 ![{DED5AE5D-631C-4131-9CFF-A5AF6ADAEF86}](https://github.com/user-attachments/assets/1209d07e-b534-4ace-bcf9-696ed0c4dd1c)
 
