@@ -26,28 +26,64 @@ This project implements the K-Means clustering algorithm in Python to analyze ho
 
 ## Result and Interpretation
 ### Centroid Center
-![{E6AFCBE9-E45A-4DF0-9DF3-1D1BFE9D45E3}](https://github.com/user-attachments/assets/6ea70705-b666-4049-828c-9fb5da4cbe68)
+![{8B4B9FD5-46B1-4201-AF35-C52F717BB647}](https://github.com/user-attachments/assets/3aa5a8d1-92c3-4608-890a-adee7e921fe4)
+
 
 ### Cluster Characteristics and Weather Classification
 - Cluster 1 : Rainy Weather
-  - Characteristic :
+  - Characteristics :
     - Lower temperature (25.89°C) and higher humidity (84.75%)
     - Significant rainfall (9.92 mm)
     - Very low solar radiation (25.58 W/m²), suggesting dense cloud cover
     - Low wind speed (1.70 m/s)
   - Reason for Classification :
+
     This cluster represents rainy weather, characterized by significant rainfall, high humidity, and minimal sunlight due to dense cloud clover
+    
 - Cluster 2 : Clear Weather
+  - Characteristics :
+    - Higher temperature (29.29°C) and lower humidity (71.50%)
+    - Almost no rainfall (0.07 mm)
+    - High solar radiation (879.86 W/m²), indicating clear skies
+    - Relatively high wind speed (3.14 m/s)
+  - Reason for Classification :
+
+    This cluster represents clear weather, with intense solar radiation, low humidity, and no rainfall, indicating sunny conditions
+    
 - Cluster 3 : Cloudly Weather
-  - 
+  - Characteristics :
+    - Moderate temperature (28.52°C) and humidity (74.26%)
+    - Minimal rainfall (0.08 mm)
+    - Medium solar radiation (412.42 W/m²), indicating partial cloud cover
+    - Moderate wind speed (2.60 m/s)
+  - Reason for Classification :
 
-### List of Data and Their Corresponding Clusters
-![{BAA77C9D-0796-4E51-83AA-849AD6293C2B}](https://github.com/user-attachments/assets/c44777e1-d37f-4fd0-b1b8-81f130e273c4)
+    This cluster represents cloudly weather, where cloud cover partially blocks solar radiation, resulting in moderate temperatures and humidity. Rainfall is negligible
 
-### Data Count for Each Cluster
-![{CC6D5282-65BA-492C-A3A2-7C2D445822D7}](https://github.com/user-attachments/assets/d483b3f0-fcf3-4597-9039-7eeb089442f1)
 
-Based on the output, it is observed that most data fall into Cluster 2. This indicates that during Januari 2022, the Banyuwangi region predominantly rainy weather
+## Cluster Distribution
+- Cluster 1 : 526 data points (rainy weather)
+- Cluster 2 : 82 data points (clear weather)
+- Cluster 3 : 136 data points (cloudly weather)
 
-### Cluster Visualization
-![image](https://github.com/user-attachments/assets/36894c20-dd1e-46ea-bf38-32c82f6871ef)
+
+## Cluster Visualization
+![image](https://github.com/user-attachments/assets/ad3f1e1b-2771-436b-bc3a-b687d3ddf19b)
+
+
+- Scatter plot displaying clusters and their centroids based on PCA results
+- Color-coded clusters :
+  - Dark Blue : Rainy Weather (Cluster 1)
+  - Brown : Clear Weather (Cluster 2)
+  - Light Blue : Cloudly Weather (Cluster 3)
+ 
+
+## Evaluation
+
+
+The clustering results align with observed weather patterns during January 2022, where rainy weather dominates in Banyuwangi
+
+
+## Limitations
+- The analysis is limited to hourly data from a single month (January 2022) and results may not generalize to other months or regions
+- K-Means assumes clusters are spherical, which may not always hold true for complex weather data distributions
