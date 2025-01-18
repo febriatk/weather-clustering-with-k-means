@@ -4,7 +4,6 @@ This project implements the K-Means clustering algorithm in Python to analyze ho
 
 
 ## Dataset Information
-
 - ### Source : BMKG Banyuwangi
 - ### Variables :
   - Temperature (°C) : Hourly average temperature
@@ -12,8 +11,8 @@ This project implements the K-Means clustering algorithm in Python to analyze ho
   - Rainfall (mm) : Hourly average precipitaion levels
   - Solar Radiation (W/m²) : Hourly average solar radiation
   - Wind Speed (m/s) : Hourly average wind speed
-- ## Time Period : 1 January 2022 to 31 January 2022
-- ## Total Data Points : 744 records (24 hours x 31 days)
+- ### Time Period : 1 January 2022 to 31 January 2022
+- ### Total Data Points : 744 records (24 hours x 31 days)
 
 
 ## Methodology
@@ -27,12 +26,20 @@ This project implements the K-Means clustering algorithm in Python to analyze ho
 
 ## Result and Interpretation
 ### Centroid Center
-![{DED5AE5D-631C-4131-9CFF-A5AF6ADAEF86}](https://github.com/user-attachments/assets/1209d07e-b534-4ace-bcf9-696ed0c4dd1c)
+![{E6AFCBE9-E45A-4DF0-9DF3-1D1BFE9D45E3}](https://github.com/user-attachments/assets/6ea70705-b666-4049-828c-9fb5da4cbe68)
 
-Based on the final results of centroid center, the data has been grouped into three clusters. The conclusions for each cluster are as follows:
-- Cluster 1 : contains data representing cloudly weather
-- Cluster 2 : contains data representing rainy weather
-- Cluster 3 : contains data representing hot weather
+### Cluster Characteristics and Weather Classification
+- Cluster 1 : Rainy Weather
+  - Characteristic :
+    - Lower temperature (25.89°C) and higher humidity (84.75%)
+    - Significant rainfall (9.92 mm)
+    - Very low solar radiation (25.58 W/m²), suggesting dense cloud cover
+    - Low wind speed (1.70 m/s)
+  - Reason for Classification :
+    This cluster represents rainy weather, characterized by significant rainfall, high humidity, and minimal sunlight due to dense cloud clover
+- Cluster 2 : Clear Weather
+- Cluster 3 : Cloudly Weather
+  - 
 
 ### List of Data and Their Corresponding Clusters
 ![{BAA77C9D-0796-4E51-83AA-849AD6293C2B}](https://github.com/user-attachments/assets/c44777e1-d37f-4fd0-b1b8-81f130e273c4)
