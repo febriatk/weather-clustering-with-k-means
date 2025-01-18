@@ -68,11 +68,16 @@ class KMeansClustering:
             self.cluster_euclidean[i][nilai_k] = nearest_cluster_idx + 1
 
     def view_data(self, data_array):
+         if self.title_attributes:
+            print("\t".join(self.title_attributes))
         for row in data_array:
             print("\t".join([f"{x:.2f}" for x in row]))
         print()
 
     def view_data_with_clusters(self):
+        if self.title_attributes:
+            headers = self.title_attributes + [f"Euclidean_{i + 1}" for i in range(len(self.cluster_attributes))] + ["Cluster"]
+            print("\t".join(headers))
         for i in range(len(self.training_attributes)):
             print("\t".join(map(str, self.training_attributes[i])), end="\t")
             print("\t".join([f"{x}" for x in self.cluster_euclidean[i]]), end="\n")
